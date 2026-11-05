@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estils.css">
+    <title>CasaTerror</title>
+</head>
+    <body>
+        <div class="header">
+            <img src="./img/estrelles.jpg" alt="logo">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="precios.html">Precios</a>
+                <a href="reserva.html" class="active">Reserva</a>
+            </nav>
+            
+        </div>
+        <hr class="border">
+        <div class="gray">
+            <h1>Reserve su habitacion en hotel terror</h1>
+            <div id="divform">
+                <form id='contact-form' action='script.php' method='post'>
+                    <fieldset>
+                        <legend>Dades personals</legend>
+                        <ul>
+                            <li><label for="tractament">Tractament desitjat: </label>
+                            <select name="tractament" id="tractament">
+                                <option value="sr">Sr.</option>
+                                <option value="sra">Sra.</option>
+                                <option value="srta">Srta.</option>
+                            </select>
+                            <li><label for="name">Nom: </label> <input type="text" name="name" id="name" value="" /></li>
+                            <li><label for="cognom">Cognoms: </label> <input type="text" name="cognom" id="cognom" value="" /></li>
+                            <li><label for="telefon">Telefon: </label> <input type="text" name="telefon" id="telefon" value="" /></li>
+                            <li><label for="correu">Correu electronic: </label> <input type="email" name="correu" id="correu" value="" /></li>
+                            <li><label for="ccorreu">Confirmació del correu: </label> <input type="email" name="ccorreu" id="ccorreu" value="" /></li>
+                            <li><label for="password">Contrasenya: </label> <input type="password" name="password" id="password" value="" /></li>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dades de la reserva </legend>
+                        <ul>
+                            <li>Selecciona el tipus d'habitació desitjada:  
+                                <ul>
+                                <li><label for="habitacio">Habitació individual</label> <input type="radio" name="habitacio" value="habitacio"></li>
+                                <li><label for="habitacio">Habitació doble</label> <input type="radio" name="habitacio" value="habitacio"></li>
+                                <li><label for="habitacio">Habitació doble superior</label> <input type="radio" name="habitacio" value="habitacio"></li>
+                                <li><label for="habitacio">Habitació triple</label> <input type="radio" name="habitacio" value="habitacio"></li>
+                                </ul>
+                            </li>
+                            <li><label for="persones">Quantitat de persones: </label> <input type="number" name="persones" id="persones" value="" /></li>
+                            <li><label for="entrada">Data d'entrada: </label> <input type="date" name="entrada" id="entrada" value="" /></li>
+                            <li><label for="sortida">Data de sortida: </label> <input type="date" name="sortida" id="sortida" value="" /></li>
+                            <li><label for="peticions">Peticions: </label> <textarea name="peticions" id="peticions" cols="25" rows="3"></textarea></li>
+                            <li><small> Les peticions especials no es poden garantir, però farem tot el possible per satisfer-les. </small></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dades addicionals </legend>
+                        <ul>
+                            <li><label for="parking">Parking interior 8€/nit: </label> <input type="checkbox" name="parking" id="parking" value="parking"></li> <!-- Si añadimos checked="checked quedara checked de default -->
+                            <li><label for="paclarativa">Es disposa de parking exterior gratuit</label></li>
+                            <li><label for="arribada">Hora d'arribada esperat: </label> <input type="time" name="arribada" id="arribada" value="" /></li>
+                            <li><label for="esmorzar">Esmorzar 5€/nit: </label> <input type="checkbox" name="esmorzar" id="esmorzar" value="esmorzar"></li>
+
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="submit" /><input type="reset"value="reset" />
+                </form>
+            </div>
+        </div>
+        <hr class="border">
+        <div class="footer">
+            <p>Actividad realizada por <strong>Víctor Agüera Rodríguez</strong></p>
+            <p>Fotografias de portada <a href="https://unsplash.com/">Unspash</a> <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./img/creative-commons.png" alt="creative-commons"></a></p>
+        </div>
+    </body>
+</html>
